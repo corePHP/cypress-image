@@ -10,7 +10,7 @@ RUN npm set progress=false
 RUN npm i -g cypress-cli@0.11.1
 
 ARG CYPRESS_VERSION
-ENV CYPRESS_VERSION ${CYPRESS_VERSION:-0.16.4}
+ENV CYPRESS_VERSION ${CYPRESS_VERSION:-0.17.4}
 RUN echo Cypress version to install $CYPRESS_VERSION
 RUN cypress install
 RUN cypress verify
